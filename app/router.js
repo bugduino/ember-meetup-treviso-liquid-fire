@@ -6,4 +6,14 @@ var Router = Ember.Router.extend({
 });
 
 export default Router.map(function() {
+  this.route('foo', {path: '/'});
+  this.route('bar');
+  this.route('toUp');
+  this.route('toDown');
+  this.route('toLeft');
+  this.route('toRight');
+  this.route('explode');
+  this.route('crossFade');
+  this.route('fade');
+  this.route('rotateBelow');
 });

@@ -1,11 +1,12 @@
-<h2 id="title">Welcome to Ember.js</h2>
 
-{{!-- {{liquid-outlet}} --}}
-
-{{#liquid-with model as currentModel use="toLeft"}}
-  <div class="spacer">
-    {{currentModel.id}}
-    <button {{action "higher" currentModel}}>Go</button>
-  </div>
-{{/liquid-with}}
-
+<div class="mainContainer">
+  {{#link-to 'toUp'}}toUp{{/link-to}}
+  {{#link-to 'toDown'}}toDown{{/link-to}}
+  {{#link-to 'toLeft'}}toLeft{{/link-to}}
+  {{#link-to 'toRight'}}toRight{{/link-to}}
+  {{#link-to 'explode'}}explode{{/link-to}}
+  {{#link-to 'crossFade'}}crossFade{{/link-to}}
+  {{#link-to 'fade'}}fade{{/link-to}}
+  {{#link-to 'rotateBelow'}}rotateBelow{{/link-to}}
+  {{liquid-outlet}}
+</div>
